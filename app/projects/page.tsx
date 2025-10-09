@@ -1,0 +1,86 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Section from "@/components/Section";
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Music Streaming App",
+      description: "A full-stack music streaming platform with real-time playback and user playlists.",
+      tags: ["React", "Node.js", "MongoDB"],
+      gradient: "from-purple-500 to-pink-500",
+    },
+    {
+      title: "Portfolio Builder",
+      description: "A no-code tool for creators to build stunning portfolios in minutes.",
+      tags: ["Next.js", "TypeScript", "Tailwind"],
+      gradient: "from-blue-500 to-cyan-500",
+    },
+    {
+      title: "AI Music Generator",
+      description: "An AI-powered tool that generates original music based on mood and style preferences.",
+      tags: ["Python", "TensorFlow", "React"],
+      gradient: "from-orange-500 to-red-500",
+    },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  return (
+    <Section id="projects" title="projects">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            variants={cardVariants}
+            whileHover={{ y: -10 }}
+            className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-neon transition-all duration-300"
+          >
+            <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300`} />
+            
+            <h3 className="text-2xl font-bold mb-3 group-hover:text-neon transition-colors">
+              {project.title}
+            </h3>
+            
+            <p className="text-gray-400 mb-4 leading-relaxed">
+              {project.description}
+            </p>
+            
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((tag, tagIndex) => (
+                <span
+                  key={tagIndex}
+                  className="px-3 py-1 text-xs bg-neon/10 text-neon border border-neon/20 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+    </Section>
+  );
+};
+
+export default Projects;
