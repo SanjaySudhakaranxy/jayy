@@ -57,7 +57,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-xl text-gray-300 mb-12 leading-relaxed"
         >
-          I'm always open to new opportunities, collaborations, or just a friendly chat. 
+          I&apos;m always open to new opportunities, collaborations, or just a friendly chat. 
           Feel free to reach out through any of the platforms below!
         </motion.p>
 

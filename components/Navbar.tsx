@@ -9,19 +9,24 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      // ensure we are in a browser environment and can access window/document
+      if (typeof window === "undefined" || typeof document === "undefined") return;
+
       const sections = ["home", "about", "projects", "contact"];
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = (window.scrollY || window.pageYOffset || 0) + 100;
 
       for (const section of sections) {
         const element = document.getElementById(section);
-        if (element) {
-          const offsetTop = element.offsetTop;
-          const offsetHeight = element.offsetHeight;
-          
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
-          }
+        if (!element) continue;
+
+        // defensive checks in case element layout information is unavailable
+        const offsetTop = typeof element.offsetTop === "number" ? element.offsetTop : null;
+        const offsetHeight = typeof element.offsetHeight === "number" ? element.offsetHeight : null;
+        if (offsetTop === null || offsetHeight === null) continue;
+
+        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          setActiveSection(section);
+          break;
         }
       }
     };

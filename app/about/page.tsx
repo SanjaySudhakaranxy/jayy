@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-// using plain <img> to avoid Next Image optimization issues for local dev preview
 import Section from "@/components/Section";
 import { SiPython, SiReact, SiJavascript, SiMysql, SiLinux, SiGrafana, SiStreamlit } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
@@ -48,7 +48,7 @@ const About = () => {
             impactful digital experiences.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed mb-8">
-            When I'm not coding, you'll find me making music, exploring new technologies, 
+            When I&apos;m not coding, you&apos;ll find me making music, exploring new technologies, 
             or collaborating on creative projects. I believe in the power of combining technical 
             skills with artistic vision.
           </p>
@@ -87,9 +87,11 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
             <div className="absolute inset-0 p-0 flex items-center justify-center overflow-hidden">
               {/* Edge-to-edge profile photo (no border/background) */}
-              <img
+              <Image
                 src="/images/profile.jpg"
                 alt="Sanjay Sudhakaran profile"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover w-full h-full"
               />
             </div>
