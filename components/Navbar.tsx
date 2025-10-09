@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -78,7 +78,7 @@ const Navbar = () => {
 
           <div className="flex-1 flex justify-end gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/SanjaySudhakaranxy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-neon transition-colors"
@@ -87,7 +87,7 @@ const Navbar = () => {
               <FaGithub size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sanjaysudhakaranxy/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-neon transition-colors"
@@ -96,13 +96,13 @@ const Navbar = () => {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.instagram.com/sensaaayyy?igsh=MXV2OGJ6ZzNuejl4aA=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-neon transition-colors"
-              aria-label="Twitter"
+              aria-label="Instagram"
             >
-              <FaTwitter size={20} />
+              <FaInstagram size={20} />
             </a>
           </div>
         </div>

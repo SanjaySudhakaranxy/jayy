@@ -6,21 +6,21 @@ import Section from "@/components/Section";
 const Projects = () => {
   const projects = [
     {
-      title: "Music Streaming App",
-      description: "A full-stack music streaming platform with real-time playback and user playlists.",
-      tags: ["React", "Node.js", "MongoDB"],
+      title: "Montogg (Server alerts Manager)",
+      description: "Enables and Disables server alerts for Pagerduty",
+      tags: ["Python", "streamlit", "Mysql"],
       gradient: "from-purple-500 to-pink-500",
     },
     {
-      title: "Portfolio Builder",
-      description: "A no-code tool for creators to build stunning portfolios in minutes.",
-      tags: ["Next.js", "TypeScript", "Tailwind"],
+      title: "EMI Cal",
+      description: "A fantasy-Pixel themed EMI Calculator web app.",
+      tags: ["Python", "streamlit", "pylibraries"],
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      title: "AI Music Generator",
-      description: "An AI-powered tool that generates original music based on mood and style preferences.",
-      tags: ["Python", "TensorFlow", "React"],
+      title: "Performaxio",
+      description: "An AI-powered Student performance analysis tool.",
+      tags: ["Python", "streamlit", "Mysql"],
       gradient: "from-orange-500 to-red-500",
     },
   ];

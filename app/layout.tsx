@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jay | Developer & Musician",
+  title: "Sanjay Sudhakaran :)",
   description: "Personal portfolio of Jay - Developer and Musician. Explore my projects and get in touch.",
   keywords: ["developer", "musician", "portfolio", "web development"],
   authors: [{ name: "Jay" }],

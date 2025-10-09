@@ -1,17 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+// using plain <img> to avoid Next Image optimization issues for local dev preview
 import Section from "@/components/Section";
-import { SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiPython, SiGit } from "react-icons/si";
+import { SiPython, SiReact, SiJavascript, SiMysql, SiLinux, SiGrafana, SiStreamlit } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
 
 const About = () => {
   const skills = [
-    { name: "JavaScript", icon: SiJavascript },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "React", icon: SiReact },
-    { name: "Node.js", icon: SiNodedotjs },
     { name: "Python", icon: SiPython },
-    { name: "Git", icon: SiGit },
+    { name: "React", icon: SiReact },
+    { name: "JavaScript", icon: SiJavascript },
+  { name: "MySQL", icon: SiMysql },
+  { name: "MSSQL", icon: FaDatabase },
+    { name: "Linux", icon: SiLinux },
+    { name: "Grafana", icon: SiGrafana },
+    { name: "Streamlit", icon: SiStreamlit },
   ];
 
   const containerVariants = {
@@ -39,7 +43,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            I am currently a <strong className="text-white">Software Development Engineer</strong> at a leading tech company. 
+            I am currently a <strong className="text-white">Software Development Intern</strong> at Extend Logics. 
             I specialize in building modern web applications with clean, efficient code and have a passion for creating 
             impactful digital experiences.
           </p>
@@ -81,12 +85,13 @@ const About = () => {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
-            <div className="absolute inset-2 bg-licorice-600 rounded-2xl flex items-center justify-center border border-white/10">
-              <p className="text-gray-500 text-center px-4">
-                Add your photo here
-                <br />
-                <span className="text-sm">(400x400px recommended)</span>
-              </p>
+            <div className="absolute inset-0 p-0 flex items-center justify-center overflow-hidden">
+              {/* Edge-to-edge profile photo (no border/background) */}
+              <img
+                src="/images/profile.jpg"
+                alt="Sanjay Sudhakaran profile"
+                className="object-cover w-full h-full"
+              />
             </div>
           </div>
         </motion.div>
@@ -111,12 +116,13 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="border-l-2 border-neon pl-6 py-4"
           >
-            <h4 className="text-xl font-semibold text-white mb-1">Software Development Engineer</h4>
-            <p className="text-neon font-medium mb-2">Tech Company Name</p>
-            <p className="text-sm text-gray-500 mb-3">JAN 2023 - PRESENT</p>
+            <h4 className="text-xl font-semibold text-white mb-1">Software Development Intern</h4>
+            <p className="text-neon font-medium mb-2">Extend Logics</p>
+            <p className="text-sm text-gray-500 mb-3">08 Sep 2025 - PRESENT</p>
             <p className="text-gray-400 leading-relaxed">
-              Led development of end-to-end features and built scalable systems. 
-              Worked on core product features that improved user experience for millions of customers.
+              Built and deployed Streamlit-based tools and React web apps for internal projects.
+               Managed Linux VMs, MySQL/MSSQL databases, and Grafana dashboards. 
+               Focused on creating efficient, data-driven systems that actually work.
             </p>
           </motion.div>
 
@@ -128,11 +134,10 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="border-l-2 border-white/20 pl-6 py-4"
           >
-            <h4 className="text-xl font-semibold text-white mb-1">Software Engineer Intern</h4>
-            <p className="text-neon font-medium mb-2">Startup Name</p>
-            <p className="text-sm text-gray-500 mb-3">MAY 2022 - AUG 2022</p>
-            <p className="text-gray-400 leading-relaxed">
-              Developed full-stack features using React and Node.js. 
+            <h4 className="text-xl font-semibold text-white mb-1">Technical Team Member</h4>
+            <p className="text-neon font-medium mb-2">Keep Learning</p>
+            <p className="text-sm text-gray-500 mb-3">JUNE 2025 - PRESENT</p>
+            <p className="text-gray-400 leading-relaxed"> 
               Collaborated with cross-functional teams to deliver high-quality products.
             </p>
           </motion.div>
@@ -145,12 +150,11 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="border-l-2 border-white/20 pl-6 py-4"
           >
-            <h4 className="text-xl font-semibold text-white mb-1">Junior Developer</h4>
-            <p className="text-neon font-medium mb-2">Another Company</p>
-            <p className="text-sm text-gray-500 mb-3">JAN 2021 - DEC 2021</p>
+            <h4 className="text-xl font-semibold text-white mb-1">Volunteer</h4>
+            <p className="text-neon font-medium mb-2">Hope is Born</p>
+            <p className="text-sm text-gray-500 mb-3">MAY 2023 - PRESENT</p>
             <p className="text-gray-400 leading-relaxed">
-              Built responsive web applications and worked on improving application performance. 
-              Gained experience in modern web development practices and agile methodologies.
+              Christian religious movement focused on building the lives of children and young people, instilling hope through their faith in God.
             </p>
           </motion.div>
         </div>

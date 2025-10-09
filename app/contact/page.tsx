@@ -2,33 +2,33 @@
 
 import { motion } from "framer-motion";
 import Section from "@/components/Section";
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const socialLinks = [
     {
       name: "Email",
       icon: FaEnvelope,
-      href: "mailto:jay@example.com",
-      label: "jay@example.com",
+      href: "mailto:sanjaysudhakaranxy@gmail.com",
+      label: "sanjaysudhakaranxy@gmail.com",
     },
     {
       name: "GitHub",
       icon: FaGithub,
-      href: "https://github.com",
-      label: "github.com/jay",
+      href: "https://github.com/SanjaySudhakaranxy",
+      label: "github.com/SanjaySudhakaranxy",
     },
     {
       name: "LinkedIn",
       icon: FaLinkedin,
-      href: "https://linkedin.com",
-      label: "linkedin.com/in/jay",
+      href: "https://www.linkedin.com/in/sanjaysudhakaranxy/",
+      label: "linkedin.com/in/sanjaysudhakaranxy",
     },
     {
-      name: "Twitter",
-      icon: FaTwitter,
-      href: "https://twitter.com",
-      label: "@jay",
+      name: "Instagram",
+      icon: FaInstagram,
+      href: "https://www.instagram.com/sensaaayyy?igsh=MXV2OGJ6ZzNuejl4aA==",
+      label: "@sensaaayyy",
     },
   ];
 
@@ -96,7 +96,7 @@ const Contact = () => {
           className="mt-12"
         >
           <a
-            href="mailto:jay@example.com"
+            href="mailto:sanjaysudhakaranxy@gmail.com"
             className="inline-block px-8 py-3 bg-neon text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
           >
             Send me an email
