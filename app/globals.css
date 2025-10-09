@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  @apply bg-black text-white;
+  @apply bg-licorice text-white;
 }
 
 ::-webkit-scrollbar {
@@ -21,7 +21,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-black;
+  @apply bg-licorice;
 }
 
 ::-webkit-scrollbar-thumb {
