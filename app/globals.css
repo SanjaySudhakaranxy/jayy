@@ -31,3 +31,25 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-white;
 }
+
+/* Mobile optimizations */
+html, body {
+  -webkit-text-size-adjust: 100%; /* prevent iOS from resizing text */
+  -ms-text-size-adjust: 100%;
+}
+
+/* Make images and videos fluid */
+img, picture, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slightly reduce base font-size on very small screens to prevent overflow */
+@media (max-width: 360px) {
+  html { font-size: 14px; }
+}
+
+@media (min-width: 361px) and (max-width: 640px) {
+  html { font-size: 15px; }
+}

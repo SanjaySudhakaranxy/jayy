@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     description: "Personal portfolio of Jay - Developer and Musician",
     type: "website",
   },
+  // ensures correct mobile scaling on all devices
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({
