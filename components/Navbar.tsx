@@ -50,14 +50,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-licorice/80 backdrop-blur-md border-b border-white/10"
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <button 
-            onClick={() => scrollToSection("home")}
-            className="text-xl font-bold hover:text-neon transition-colors"
-          >
-            Jay
-          </button>
-          
+        <div className="flex items-center justify-center">
           <ul className="flex gap-8">
             {navItems.map((item) => (
               <li key={item.id}>
