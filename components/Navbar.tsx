@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -49,14 +50,9 @@ const Navbar = () => {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 bg-licorice/80 backdrop-blur-md border-b border-white/10"
     >
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button 
-            onClick={() => scrollToSection("home")}
-            className="text-xl font-bold hover:text-neon transition-colors"
-          >
-            Jay
-          </button>
+          <div className="flex-1"></div>
           
           <ul className="flex gap-8">
             {navItems.map((item) => (
@@ -79,6 +75,36 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <div className="flex-1 flex justify-end gap-4">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-neon transition-colors"
+              aria-label="GitHub"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-neon transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-neon transition-colors"
+              aria-label="Twitter"
+            >
+              <FaTwitter size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </motion.nav>
