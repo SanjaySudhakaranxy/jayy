@@ -97,7 +97,7 @@ const Contact = () => {
         >
           <a
             href="mailto:sanjaysudhakaranxy@gmail.com"
-            className="inline-block px-8 py-3 bg-neon text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
+            className="inline-block px-6 sm:px-8 py-3 bg-neon text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300"
           >
             Send me an email
           </a>

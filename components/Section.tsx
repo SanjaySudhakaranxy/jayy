@@ -11,7 +11,7 @@ interface SectionProps {
 
 const Section = ({ id, title, children }: SectionProps) => {
   return (
-    <section id={id} className="min-h-screen py-20 px-6">
+    <section id={id} className="min-h-screen sm:min-h-[60vh] py-16 sm:py-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

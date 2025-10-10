@@ -47,18 +47,18 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       >
         {projects.map((project, index) => (
           <motion.div
             key={index}
             variants={cardVariants}
             whileHover={{ y: -10 }}
-            className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-neon transition-all duration-300"
+            className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5 sm:p-6 hover:border-neon transition-all duration-300"
           >
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-300`} />
             
-            <h3 className="text-2xl font-bold mb-3 group-hover:text-neon transition-colors">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-neon transition-colors">
               {project.title}
             </h3>
             
