@@ -83,7 +83,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           
         >
-          <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-80 md:h-80 flex-shrink-0">
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-80 md:h-80 flex-shrink-0">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
             <div className="absolute inset-0 p-0 flex items-center justify-center overflow-hidden">
               {/* Edge-to-edge profile photo (no border/background) */}
@@ -91,7 +91,7 @@ const About = () => {
                 src="/images/profile.jpg"
                 alt="Sanjay Sudhakaran profile"
                 fill
-                sizes="(max-width: 640px) 96px, (max-width: 768px) 140px, 33vw"
+                sizes="(max-width: 640px) 140px, (max-width: 768px) 180px, 33vw"
                 className="object-cover w-full h-full"
               />
             </div>
