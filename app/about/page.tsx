@@ -81,7 +81,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex justify-center"
+          className="flex justify-center md:justify-center sm:justify-end"
         >
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
