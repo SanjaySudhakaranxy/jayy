@@ -83,7 +83,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="flex justify-center"
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
             <div className="absolute inset-0 p-0 flex items-center justify-center overflow-hidden">
               {/* Edge-to-edge profile photo (no border/background) */}
