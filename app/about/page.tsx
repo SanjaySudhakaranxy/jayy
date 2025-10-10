@@ -35,7 +35,7 @@ const About = () => {
 
   return (
     <Section id="about" title="about me">
-      <div className="grid md:grid-cols-2 gap-12 items-start">
+      <div className="flex flex-row items-start gap-6 flex-nowrap md:grid md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -76,14 +76,14 @@ const About = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div
+        <motion.div className="flex-1 min-w-0"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex justify-center md:justify-center sm:justify-end"
+          
         >
-          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80">
+          <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-80 md:h-80 flex-shrink-0">
             <div className="absolute inset-0 bg-gradient-to-br from-neon/20 to-fireRed/20 rounded-2xl"></div>
             <div className="absolute inset-0 p-0 flex items-center justify-center overflow-hidden">
               {/* Edge-to-edge profile photo (no border/background) */}
@@ -91,7 +91,7 @@ const About = () => {
                 src="/images/profile.jpg"
                 alt="Sanjay Sudhakaran profile"
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 640px) 96px, (max-width: 768px) 140px, 33vw"
                 className="object-cover w-full h-full"
               />
             </div>
