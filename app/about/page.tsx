@@ -35,8 +35,8 @@ const About = () => {
 
   return (
     <Section id="about" title="about me">
-      <div className="flex flex-row items-start gap-6 flex-nowrap md:grid md:grid-cols-2">
-        <motion.div
+  <div className="grid grid-cols-2 gap-6 items-start">
+        <motion.div className="col-span-1 min-w-0"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -76,7 +76,7 @@ const About = () => {
           </motion.div>
         </motion.div>
 
-        <motion.div className="flex-1 min-w-0"
+        <motion.div className="col-span-1 flex items-start justify-end"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
