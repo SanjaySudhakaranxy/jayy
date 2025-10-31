@@ -8,13 +8,13 @@ const Projects = () => {
     {
       title: "Inventory Management System (Team Project)",
       description: "Collaborating to develop an inventory solution for a stock resell company.",
-      tags: ["Python", "Django", "MySQL"],
+      tags: ["Python","MySQL"],
       gradient: "from-green-500 to-emerald-500",
     },
     {
       title: "DexHub (Pokémon Card Trading Web App)",
       description: "Designed and developed a web platform for Pokémon enthusiasts to trade, compare, and manage collections in real-time.",
-      tags: ["React", "Node.js", "WebSockets"],
+      tags: ["React", "Node.js", "MySQL"],
       gradient: "from-indigo-500 to-blue-400",
     },
     {

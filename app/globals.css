@@ -13,7 +13,9 @@ html {
 }
 
 body {
-  @apply bg-licorice text-white;
+  /* Use pure black background while keeping Tailwind text color */
+  @apply text-white;
+  background-color: #000000;
 }
 
 ::-webkit-scrollbar {
