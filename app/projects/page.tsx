@@ -6,9 +6,21 @@ import Section from "@/components/Section";
 const Projects = () => {
   const projects = [
     {
-      title: "Montogg (Server alerts Manager)",
-      description: "Enables and Disables server alerts for Pagerduty",
-      tags: ["Python", "streamlit", "Mysql"],
+      title: "Inventory Management System (Team Project)",
+      description: "Collaborating to develop an inventory solution for a stock resell company.",
+      tags: ["Python","MySQL"],
+      gradient: "from-green-500 to-emerald-500",
+    },
+    {
+      title: "DexHub (Pokémon Card Trading Web App)",
+      description: "Designed and developed a web platform for Pokémon enthusiasts to trade, compare, and manage collections in real-time.",
+      tags: ["React", "Node.js", "MySQL"],
+      gradient: "from-indigo-500 to-blue-400",
+    },
+    {
+      title: "Montogg (Streamlit Web Tool)",
+      description: "Built a production-grade monitoring control tool that toggles PagerDuty server alerts on/off in real time. Deployed and currently live in production, enabling engineers to manage alert workflows more efficiently during maintenance and incident response.",
+      tags: ["Python", "streamlit", "MySQL"],
       gradient: "from-purple-500 to-pink-500",
     },
     {

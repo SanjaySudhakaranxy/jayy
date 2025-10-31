@@ -136,11 +136,11 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="border-l-2 border-white/20 pl-6 py-4"
           >
-            <h4 className="text-xl font-semibold text-white mb-1">Technical Team Member</h4>
-            <p className="text-neon font-medium mb-2">Keep Learning</p>
-            <p className="text-sm text-gray-500 mb-3">JUNE 2025 - PRESENT</p>
-            <p className="text-gray-400 leading-relaxed"> 
-              Collaborated with cross-functional teams to deliver high-quality products.
+            <h4 className="text-xl font-semibold text-white mb-1">Intern</h4>
+            <p className="text-neon font-medium mb-2">Aliff Overseas</p>
+            <p className="text-sm text-gray-500 mb-3">DECEMBER 2025</p>
+            <p className="text-gray-400 leading-relaxed">
+             Supported the counseling team in handling student queries and organizing consultation sessions.
             </p>
           </motion.div>
 
@@ -152,11 +152,11 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="border-l-2 border-white/20 pl-6 py-4"
           >
-            <h4 className="text-xl font-semibold text-white mb-1">Volunteer</h4>
-            <p className="text-neon font-medium mb-2">Hope is Born</p>
-            <p className="text-sm text-gray-500 mb-3">MAY 2023 - PRESENT</p>
+            <h4 className="text-xl font-semibold text-white mb-1">Technical Team Member</h4>
+            <p className="text-neon font-medium mb-2">Keep Learning</p>
+            <p className="text-sm text-gray-500 mb-3">JUNE 2025 - PRESENT</p>
             <p className="text-gray-400 leading-relaxed">
-              Christian religious movement focused on building the lives of children and young people, instilling hope through their faith in God.
+              Collaborated with cross-functional teams to deliver high-quality products.
             </p>
           </motion.div>
         </div>
